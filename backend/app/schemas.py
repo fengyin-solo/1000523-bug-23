@@ -26,6 +26,7 @@ class EntryPayload(BaseModel):
 
     values: dict[str, Any] = Field(default_factory=dict)
     remark: str | None = None
+    operator: str | None = None  # 提交人账号：联锁设备按它校验车站归属
 
 
 
