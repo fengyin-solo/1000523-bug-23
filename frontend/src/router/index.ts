@@ -6,6 +6,7 @@ const Signal = () => import('@/views/signal/index.vue')
 const Switch = () => import('@/views/switch/index.vue')
 const Track = () => import('@/views/track/index.vue')
 const Interlock = () => import('@/views/interlock/index.vue')
+const InterlockOwners = () => import('@/views/interlock/owners.vue')
 const Atp = () => import('@/views/atp/index.vue')
 const Plan = () => import('@/views/plan/index.vue')
 const Task = () => import('@/views/task/index.vue')
@@ -29,6 +30,7 @@ const router = createRouter({
     { path: '/switch', name: 'switch', component: Switch },
     { path: '/track', name: 'track', component: Track },
     { path: '/interlock', name: 'interlock', component: Interlock },
+    { path: '/interlock/owners', name: 'interlock-owners', component: InterlockOwners },
     { path: '/atp', name: 'atp', component: Atp },
     { path: '/plan', name: 'plan', component: Plan },
     { path: '/task', name: 'task', component: Task },
